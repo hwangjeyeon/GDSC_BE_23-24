@@ -1,6 +1,7 @@
 package org.example.controller;
 
 import org.apache.coyote.Response;
+import org.example.dto.MemberDto;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -40,7 +41,7 @@ public class CrudController {
         memberDto.setEmail(email);
         memberDto.setOrganization(organization);
 
-        return ResponseEntity.status(HttpStatus.OK).body(memeberDto);
+        return ResponseEntity.status(HttpStatus.OK).body(memberDto);
     }
 
     @PostMapping(value = "/add-header")
