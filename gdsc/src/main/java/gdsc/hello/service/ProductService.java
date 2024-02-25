@@ -1,13 +1,15 @@
-package com.example.gdsc.service;
+package gdsc.hello.service;
 
-import com.example.gdsc.data.dto.ProductDto;
-import com.example.gdsc.data.dto.ProductResponseDto;
-import com.example.gdsc.data.repository.ProductRepository;
+import gdsc.hello.data.dto.ProductDto;
+import gdsc.hello.data.dto.ProductResponseDto;
 
 public interface ProductService {
 
     ProductResponseDto getProduct(Long number);
+
     ProductResponseDto saveProduct(ProductDto productDto);
     ProductResponseDto changeProductName(Long number, String name) throws Exception;
+
     void deleteProduct(Long number) throws Exception;
+
 }

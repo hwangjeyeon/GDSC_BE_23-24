@@ -1,17 +1,11 @@
-package com.example.gdsc.data.dto;
+package gdsc.hello.data.dto;
 
-import lombok.*;
+import lombok.Data;
 
-@ToString
-@Getter
-@Setter
-@Builder
-@AllArgsConstructor
-@NoArgsConstructor
+@Data
 public class ProductResponseDto {
 
     private Long number;
-
     private String name;
     private int price;
     private int stock;

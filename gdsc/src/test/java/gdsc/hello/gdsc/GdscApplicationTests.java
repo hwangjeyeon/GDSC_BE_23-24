@@ -1,4 +1,4 @@
-package com.example.gdsc;
+package gdsc.hello.gdsc;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

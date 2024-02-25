@@ -1,13 +1,14 @@
-package com.example.gdsc.data.dao;
+package gdsc.hello.dao;
 
-import com.example.gdsc.data.entity.Product;
+import gdsc.hello.entity.Product;
 
-public interface ProductDAO {
+public interface ProductDao{
+
     Product insertProduct(Product product);
 
     Product selectProduct(Long number);
-
     Product updateProductName(Long number, String name) throws Exception;
 
     void deleteProduct(Long number) throws Exception;
+
 }

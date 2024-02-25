@@ -1,18 +1,15 @@
-package com.example.gdsc.data.entity;
+package gdsc.hello.entity;
 
-import lombok.*;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.time.LocalDateTime;
 
 @Entity
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
-@EqualsAndHashCode
-@ToString(exclude = "name")
-@Table(name = "product")
+@Table(name= "product")
+@Getter @Setter
 public class Product {
 
     @Id
@@ -21,14 +18,11 @@ public class Product {
 
     @Column(nullable = false)
     private String name;
-
     @Column(nullable = false)
     private Integer price;
-
     @Column(nullable = false)
     private Integer stock;
-
     private LocalDateTime createdAt;
-
     private LocalDateTime updatedAt;
+
 }

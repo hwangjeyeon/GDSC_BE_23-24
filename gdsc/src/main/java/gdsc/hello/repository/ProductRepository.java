@@ -1,6 +1,6 @@
-package com.example.gdsc.data.repository;
+package gdsc.hello.repository;
 
-import com.example.gdsc.data.entity.Product;
+import gdsc.hello.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ProductRepository extends JpaRepository<Product, Long> {
